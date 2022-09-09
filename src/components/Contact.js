@@ -89,7 +89,7 @@ export default function Contact() {
                                 value={feedback.para}
                                 onChange={(e) => setFeedBack({...feedback , para : e.target.value})} 
                                 ></textarea>
-                                <label for="comment" className="msg-label"> Enter your message</label>
+                                <label htmlfor="comment" className="msg-label"> Enter your message</label>
                             </div>
                             <div>
                             <input
