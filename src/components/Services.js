@@ -34,7 +34,7 @@ export default function Services(){
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
                     ea!
                 </p>
-                <a href="#"><h2>MORE!</h2></a>
+                <a href="https://www.google.com/"><h2>MORE!</h2></a>
                 </div>
                 <div className="offer">
                 <TiGlobeOutline className="icon-icon" />
@@ -43,7 +43,7 @@ export default function Services(){
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
                     ea!
                 </p>
-                <a href="#"><h2>MORE!</h2></a>
+                <a href="https://www.google.com/"><h2>MORE!</h2></a>
                 </div>
                 <div className="offer">
                 <BsCodeSlash className="icon-icon" />
@@ -52,7 +52,7 @@ export default function Services(){
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
                     ea!
                 </p>
-                <a href="#"><h2>MORE!</h2></a>
+                <a href="https://www.google.com/"><h2>MORE!</h2></a>
                 </div>
                 <div className="offer">
                 <IoFileTrayStackedSharp className="icon-icon" />
@@ -61,7 +61,7 @@ export default function Services(){
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
                     ea!
                 </p>
-                <a href="#"><h2>MORE!</h2></a>
+                <a href="https://www.google.com/"><h2>MORE!</h2></a>
                 </div>
             </div>
             </div>)
