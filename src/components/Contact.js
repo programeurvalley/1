@@ -66,7 +66,7 @@ export default function Contact() {
                                 value={feedback.name}
                                 onChange={(e) => setFeedBack({...feedback , name : e.target.value })} 
                                 />
-                                <label for="name"> Enter your name</label>
+                                <label htmlfor="name"> Enter your name</label>
                             </div>
                             <div className="input-container">
                                 <input
@@ -78,7 +78,7 @@ export default function Contact() {
                                 value={feedback.email}
                                 onChange={(e) => setFeedBack({...feedback , email : e.target.value })} 
                                 />
-                                <label for="email"> Enter a valid email adress</label>
+                                <label htmlfor="email"> Enter a valid email adress</label>
                             </div>
                             <div className="input-container msg-container">
                                 <textarea
