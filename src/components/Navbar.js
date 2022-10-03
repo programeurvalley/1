@@ -1,50 +1,31 @@
-import React from "react";
-import { useState } from "react";
+import React from 'react'
 
 // Assests
-import logo from "../assests/logo.png";
-import {AiFillFacebook , AiOutlineMenu , AiFillInstagram , AiFillTwitterSquare} from 'react-icons/ai';
+import logo from '../assests/logo.png'
 
-// Style
-import '../styles/Navbar.css';
-
-export default function Navbar(){
-        const [collapse , setCollapse] = useState(false);
-
-        const handleClick = () => {
-            setCollapse(!collapse);
-        }
-
-        return(
-        <nav>
-            <div className="navbar">
-                <img src={logo} alt="logo.png" className="logo" />
-
-                <ul className="socialMedia-list">
-                    <li>
-                    <a href="https://www.google.com/"><AiFillFacebook size={"2rem"} /></a>
-                    </li>
-                    <li>
-                    <a href="https://www.google.com/"><AiFillTwitterSquare size={"2rem"} /></a>
-                    </li>
-                    <li>
-                    <a href="https://www.google.com/"><AiFillInstagram size={"2rem"} /></a>
-                    </li>
-
-                </ul>
-
-                <button className="btn-no-styling" onClick={handleClick}>
-                    <AiOutlineMenu size={"2rem"} style={{marginLeft:30}} />
-                </button>
+export default function Navbar() {
+    return (
+        <div className='navbar navbar-inverse navbar-fixed-top headroom'>
+            <div className='container' >
+                <div className='navbar-header'>
+                    <button type='button' className='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+                        <span className='icon-bar'></span>
+                        <span className='icon-bar'></span>
+                        <span className='icon-bar'></span>
+                    </button>
+                    <a href='#' className='navbar-brand'>
+                        <img src={logo} alt='progreccuss' />
+                    </a>
+                </div>
+                <div className='navbar-collapse collapse'>
+                    <ul className='nav navbar-nav pull-right'>
+                        <li><a href='#'>Home</a></li>
+                        <li><a href='#'>About</a></li>
+                        <li><a href='#'>Contact</a></li>
+                        <li><a href='#' className='btn'>Sign In / Sign Up</a></li>
+                    </ul>
+                </div>
             </div>
-
-            {collapse ? <div className="bg-white text-center border-bottom-2 p-0" >
-                <a href="https://www.google.com/" className="display-block p-20">About</a>
-                <a href="https://www.google.com/" className="display-block p-20">Services</a>
-                <a href="https://www.google.com/" className="display-block p-20">Support</a>
-                <a href="https://www.google.com/" className="display-block p-20">Contact</a>
-            </div> : <></>}
-            
-        </nav>
-        );
+        </div>
+    )
 }
